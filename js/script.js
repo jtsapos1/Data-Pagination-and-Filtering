@@ -16,17 +16,19 @@ This function will create and insert/append the elements needed to display a "pa
 function showPage (list, page) {
     //two variables to store start index and end index of list items per page given
         
-    const startIndex = 
-    const endIndex =
+    const startIndex = (page * itemsPerPage) - itemsPerPage
+    const endIndex = (page * itemsPerPage)
 
     studentList.innerHTML = "";
     //loop through objects in list param
     for (i = 0; i < list.length; i++) {
-      
+
    
     }
-
+    console.log(list);
+    console.log(page);
 }
+showPage(data, 1);
 
 
 /*
