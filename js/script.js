@@ -7,6 +7,7 @@ For assistance:
    Check out the "Project Resources" section of the Instructions tab: https://teamtreehouse.com/projects/data-pagination-and-filtering#instructions
    Reach out in your Slack community: https://treehouse-fsjs-102.slack.com/app_redirect?channel=unit-2
 */
+const itemsPerPage = 9;
 const studentList = document.querySelector('.student-list');
 
 /*
@@ -17,13 +18,16 @@ function showPage (list, page) {
     //two variables to store start index and end index of list items per page given
     console.log(list);
     console.log(page);
-        
+
     const startIndex = (page * itemsPerPage) - itemsPerPage
     const endIndex = (page * itemsPerPage)
 
     studentList.innerHTML = "";
     //loop through objects in list param
     for (i = 0; i < list.length; i++) {
+      if( i >= startIndex && i < endIndex) {
+
+      }
 
    
     }
