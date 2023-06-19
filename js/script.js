@@ -22,6 +22,7 @@ function showPage (list, page) {
     studentList.innerHTML = "";
     //loop through objects in list param
     for (i = 0; i < list.length; i++) {
+      
    
     }
 
