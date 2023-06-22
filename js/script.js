@@ -42,9 +42,7 @@ function showPage (list, page) {
 
       }
 
-   
-    }
-    
+    }    
 }
 showPage(data, 1);
 
