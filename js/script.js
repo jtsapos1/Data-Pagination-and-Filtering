@@ -28,6 +28,7 @@ function showPage (list, page) {
       //the students at these indexes are the ones we want to display on the page.
       if( i >= startIndex && i < endIndex) {
         const student = list[i];
+        console.log('student', student);
         studentList.innerHTML += `<li class="student-item cf">
         <div class="student-details">
           <img class="avatar" src=${student.picture.thumbnail} alt="Profile Picture" />
