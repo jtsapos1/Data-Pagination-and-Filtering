@@ -9,7 +9,7 @@ For assistance:
 */
 const itemsPerPage = 9;
 const studentList = document.querySelector('.student-list');
-
+const studentItem = 
 /*
 Create the `showPage` function
 This function will create and insert/append the elements needed to display a "page" of nine students
@@ -22,9 +22,10 @@ function showPage (list, page) {
     const startIndex = (page * itemsPerPage) - itemsPerPage
     const endIndex = (page * itemsPerPage)
 
-    studentList.innerHTML = "";
+    studentList.innerHTML = ""; //removes any existing students that displayed previously
     //loop through objects in list param
     for (i = 0; i < list.length; i++) {
+      //the students at these indexes are the ones we want to display on the page.
       if( i >= startIndex && i < endIndex) {
 
       }
