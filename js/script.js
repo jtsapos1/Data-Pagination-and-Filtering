@@ -9,7 +9,7 @@ For assistance:
 */
 const itemsPerPage = 9;
 const studentList = document.querySelector('.student-list');
-const studentItem = 
+
 /*
 Create the `showPage` function
 This function will create and insert/append the elements needed to display a "page" of nine students
@@ -32,6 +32,9 @@ function showPage (list, page) {
         studentList.innerHTML += `<li class="student-item cf">
         <div class="student-details">
           <img class="avatar" src=${student.picture.thumbnail} alt="Profile Picture" />
+          <img class="avatar" src=${student.name.title} alt="Student title" />
+          <img class="avatar" src=${student.name.first} alt="Student first name" />
+          <img class="avatar" src=${student.name.last} alt="Student last name" />
         </div>
       </li>`;
 
