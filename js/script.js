@@ -36,7 +36,7 @@ function showPage (list, page) {
           <span class="email">${student.email}</span>
         </div>
         <div class ="joined-details">
-          <span class="date">${student.registered.date}</span>
+          <span class="date">Joined ${student.registered.date}</span>
         </div>
       </li>`;
 
