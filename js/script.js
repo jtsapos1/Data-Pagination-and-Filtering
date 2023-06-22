@@ -32,11 +32,11 @@ function showPage (list, page) {
         studentList.innerHTML += `<li class="student-item cf">
         <div class="student-details">
           <img class="avatar" src=${student.picture.thumbnail} alt="Profile Picture" />
-          <h3>${student.name.first, student.name.last} alt="Student name"<h3/>
-          <span class="email">${student.email} alt="email"</span>
+          <h3>${student.name.first, student.name.last}<h3/>
+          <span class="email">${student.email}</span>
         </div>
         <div class ="joined-details">
-          <span class="date">${student.registered.age.date} alt="registration date"</span>
+          <span class="date">${student.registered.age.date}</span>
         </div>
       </li>`;
 
